@@ -1,8 +1,15 @@
-export default function Home() 
-{
+import { AdvertBar } from '@/components/AdvertBar'
+import { Hero } from '@/components/Hero'
+import { ExampleSection } from '@/components/ExampleSection'
+import { Footer } from '@/components/Footer'
+
+export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
+    <>
+      <AdvertBar />
+      <Hero />
+      <ExampleSection />
+      <Footer />
+    </>
+  )
 }
