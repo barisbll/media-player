@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { cn } from '@/utility/cn'
 import { exo } from '@/assets/fonts'
+import { AdvertBar } from '@/components/AdvertBar'
+import { NavBar } from '@/components/NavBar'
+import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Media Player',
@@ -15,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(exo.className, 'flex flex-col')}>{children}</body>
+      <body className={cn(exo.className, 'flex flex-col')}>
+        <AdvertBar />
+        <NavBar />
+
+        {children}
+
+        <Footer />
+      </body>
     </html>
   )
 }
