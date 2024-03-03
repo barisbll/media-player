@@ -1,7 +1,9 @@
 export const Hero = () => {
   return (
-    <div className="w-full h-1/2scHeight bg-darkGray">
-      <h1 className="text-center">Hero</h1>
+    <div className="w-full h-1/2scHeight">
+      <video className="w-full h-full object-cover" autoPlay loop muted>
+        <source src="/videos/bg-video.mp4" type="video/mp4" />
+      </video>
     </div>
   )
 }
