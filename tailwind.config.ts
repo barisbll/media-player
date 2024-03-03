@@ -16,6 +16,8 @@ const config: Config = {
         linkBlue: '#404F84',
         blackText: '#111010',
         activeWhite: '#E5E5DF',
+        primaryBorderColor: '#827D7D',
+        buttonTextColor: '#1C1B1B',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
