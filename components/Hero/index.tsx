@@ -1,6 +1,8 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import { Button } from '../Button'
+import { MediaPlayerButton } from '../MediaPlayerButton'
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -39,8 +41,8 @@ export const Hero = () => {
   }
 
   return (
-    <div className="w-full h-1/2scHeight relative flex">
-      <div className="w-full h-full bg-black bg-opacity-50 z-10"></div>
+    <div className="w-full h-3/4scHeight relative flex bg-black">
+      {/* <div className="w-full h-full bg-black bg-opacity-65 z-10"></div> */}
       <video
         ref={videoRef}
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
@@ -51,24 +53,54 @@ export const Hero = () => {
       >
         <source src="/videos/bg-video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between z-20">
-        <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'}</button>
-        <div className="flex-1 mx-4 cursor-pointer" onClick={scrub}>
-          <div
-            className="bg-gray-700 h-1"
-            style={{ width: `${progress}%` }}
-          ></div>
-        </div>
-        <div>
-          {Math.floor(
-            ((progress / 100) * (videoRef?.current?.duration || 100)) / 60
-          )}
-          :
-          {Math.floor(
-            ((progress / 100) * (videoRef?.current?.duration || 100)) % 60
-          )
-            .toString()
-            .padStart(2, '0')}
+      <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-90"></div>
+      <div className="w-full h-full absolute top-0 left-0 z-20 flex justify-center items-center">
+        <div className="h-1/2 w-2/3 flex flex-col justify-between items-start">
+          {/* BUTTON START */}
+          <div>
+            <Button type="secondary">LOREM IPSUM</Button>
+          </div>
+          {/* BUTTON END */}
+          {/* TITLE START */}
+          <div>
+            <h1 className="text-white">Lorem Ipsum Dolor Sit amet</h1>
+            <h1 className="text-white">
+              Donec cursus ligula diam, nec congue augue ultrices nec.
+            </h1>
+          </div>
+          {/* TITLE END */}
+          {/* MEDIA PLAYER START */}
+          <div className="w-full flex items-center justify-between border border-white-20 rounded-sm px-6 py-3 bg-black bg-opacity-20">
+            {/* <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'}</button> */}
+            <MediaPlayerButton
+              onClick={togglePlay}
+              isPlaying={isPlaying}
+              width={20}
+              height={20}
+            />
+            <div
+              className="flex-1 mx-4 cursor-pointer bg-mediaLine"
+              onClick={scrub}
+            >
+              <div
+                className="bg-green h-1"
+                style={{ width: `${progress}%` }}
+              ></div>
+            </div>
+            <div className="text-mediaTime font-bold">
+              {Math.floor(
+                ((progress / 100) * (videoRef?.current?.duration || 100)) / 60
+              )}
+              :
+              {Math.floor(
+                ((progress / 100) * (videoRef?.current?.duration || 100)) % 60
+              )
+                .toString()
+                .padStart(2, '0')}
+            </div>
+          </div>
+          {/* MEDIA PLAYER END */}
         </div>
       </div>
     </div>
