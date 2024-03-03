@@ -13,12 +13,14 @@ const config: Config = {
         lightGray: '#ECECEC', // exampleSection
         mediumGray: '#D9D9D9', // footer
         darkGray: '#827D7D', // navbar
+        darkerGray: '#443B3B',
         linkBlue: '#404F84',
         blackText: '#111010',
         activeWhite: '#E5E5DF',
         primaryBorderColor: '#827D7D',
         buttonTextColor: '#1C1B1B',
         'white-20': 'rgba(255, 255, 255, 0.2)',
+        'gray-005': 'rgba(217, 217, 217, 0.05)',
         grayBorder: '#888D8E',
         green: '#CAE871',
         mediaLine: '#252525',

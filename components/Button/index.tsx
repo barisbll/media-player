@@ -24,7 +24,10 @@ export const Button: React.FC<ButtonProps> = ({
       )
       break
     case 'secondary':
-      typeStyles = 'bg-gray-800 hover:bg-gray-900 text-white'
+      typeStyles = cn(
+        'bg-gray-005 hover:bg-darkGray font-semibold text-sm text-white px-6 py-4 border border-primaryBorderColor rounded-xl tracking-wider',
+        isActive ? 'bg-darkGray' : 'bg-gray-005'
+      )
       break
     case 'tertiary':
       typeStyles =
@@ -38,15 +41,5 @@ export const Button: React.FC<ButtonProps> = ({
       break
   }
 
-  return (
-    <button
-      className={cn(
-        typeStyles,
-        className
-        // 'bg-mediumGray hover:bg-lightGray text-blackText text-sm px-4 py-2 border border-black rounded-sm'
-      )}
-    >
-      {children}
-    </button>
-  )
+  return <button className={cn(typeStyles, className)}>{children}</button>
 }

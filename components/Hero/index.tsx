@@ -3,10 +3,11 @@
 import { useRef, useState } from 'react'
 import { Button } from '../Button'
 import { MediaPlayerButton } from '../MediaPlayerButton'
+import { HeaderTitle } from '../HeaderTitle'
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(true)
   const [progress, setProgress] = useState(0)
 
   const togglePlay = () => {
@@ -53,8 +54,8 @@ export const Hero = () => {
       >
         <source src="/videos/bg-video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-90"></div>
-      <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80"></div>
+      <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-80"></div>
       <div className="w-full h-full absolute top-0 left-0 z-20 flex justify-center items-center">
         <div className="h-1/2 w-2/3 flex flex-col justify-between items-start">
           {/* BUTTON START */}
@@ -63,11 +64,11 @@ export const Hero = () => {
           </div>
           {/* BUTTON END */}
           {/* TITLE START */}
-          <div>
-            <h1 className="text-white">Lorem Ipsum Dolor Sit amet</h1>
-            <h1 className="text-white">
+          <div className="w-2/3 flex flex-col gap-4">
+            <HeaderTitle isColorful> Lorem Ipsum Dolor Sit amet </HeaderTitle>
+            <HeaderTitle isColorful={false}>
               Donec cursus ligula diam, nec congue augue ultrices nec.
-            </h1>
+            </HeaderTitle>
           </div>
           {/* TITLE END */}
           {/* MEDIA PLAYER START */}
