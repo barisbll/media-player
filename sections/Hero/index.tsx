@@ -56,7 +56,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-80"></div>
       <div className="w-full h-full absolute top-0 left-0 z-20 flex justify-center items-center">
-        <div className="h-2/5 w-2/3 flex flex-col justify-between items-start">
+        <div className="min-[1800px]:h-2/5 md:h-3/5 w-2/3 flex flex-col justify-between items-start">
           {/* BUTTON START */}
           <div>
             <Button type="secondary">LOREM IPSUM</Button>

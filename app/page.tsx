@@ -1,11 +1,11 @@
 import { Hero } from '@/sections/Hero'
-import { ExampleSection } from '@/sections/ExampleSection'
+import { Example } from '@/sections/Example'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <ExampleSection />
+      <Example />
     </>
   )
 }

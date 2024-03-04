@@ -1,6 +1,6 @@
 import { Button } from '@/components/Button'
 
-export const ExampleSection = () => {
+export const Example = () => {
   return (
     <div className="w-full h-exampleSectionHeight flex flex-col justify-around items-center bg-lightGray py-9">
       <Button className="pt-4" type="tertiary">
