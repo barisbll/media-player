@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { cn } from '@/utility/cn'
 import { exo } from '@/assets/fonts'
-import { AdvertBar } from '@/components/AdvertBar'
-import { NavBar } from '@/components/NavBar'
-import { Footer } from '@/components/Footer'
+import { AdvertBar } from '@/sections/AdvertBar'
+import { NavBar } from '@/sections/NavBar'
+import { Footer } from '@/sections/Footer'
 
 export const metadata: Metadata = {
   title: 'Media Player',

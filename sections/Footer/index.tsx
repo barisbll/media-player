@@ -1,7 +1,7 @@
 import { inter } from '@/assets/fonts'
 import { cn } from '@/utility/cn'
-import { GradientDivider } from '../GradientDivider'
-import { BrandIcon } from '../Icons/BrandIcon'
+import { GradientDivider } from '@/components/GradientDivider'
+import { BrandIcon } from '@/components/Icons/BrandIcon'
 
 export const Footer = () => {
   return (

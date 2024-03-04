@@ -1,9 +1,9 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { Button } from '../Button'
-import { MediaPlayerButton } from '../MediaPlayerButton'
-import { HeaderTitle } from '../HeaderTitle'
+import { Button } from '@/components/Button'
+import { MediaPlayerButton } from '@/components/MediaPlayerButton'
+import { HeaderTitle } from '@/components/HeaderTitle'
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null)

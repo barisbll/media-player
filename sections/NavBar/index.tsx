@@ -1,8 +1,8 @@
-import { BrandIcon } from '../Icons/BrandIcon'
-import { CartIcon } from '../Icons/CartIcon'
-import { ProfileIcon } from '../Icons/ProfileIcon'
-import { SearchIcon } from '../Icons/SearchIcon'
-import { Button } from '../Button'
+import { BrandIcon } from '@/components/Icons/BrandIcon'
+import { CartIcon } from '@/components/Icons/CartIcon'
+import { ProfileIcon } from '@/components/Icons/ProfileIcon'
+import { SearchIcon } from '@/components/Icons/SearchIcon'
+import { Button } from '@/components/Button'
 
 export const NavBar = () => {
   return (

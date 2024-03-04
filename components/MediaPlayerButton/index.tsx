@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import { MediaPlayIcon } from '../Icons/MediaPlayIcon'
-import { MediaPauseIcon } from '../Icons/MediaPauseIcon'
+import { MediaPlayIcon } from '@/components/Icons/MediaPlayIcon'
+import { MediaPauseIcon } from '@/components/Icons/MediaPauseIcon'
 import { cn } from '@/utility/cn'
 
 type MediaPlayerButtonProps = {
