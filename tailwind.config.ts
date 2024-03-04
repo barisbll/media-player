@@ -35,8 +35,6 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       height: {
-        '3/4scHeight': '75vh',
-        '1/3scHeight': '33.333333vh',
         heroHeight: '56.81rem',
         navbarHeight: '6.31rem',
         advertHeight: '4.43rem',
