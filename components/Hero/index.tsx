@@ -42,8 +42,7 @@ export const Hero = () => {
   }
 
   return (
-    <div className="w-full h-3/4scHeight relative flex bg-black">
-      {/* <div className="w-full h-full bg-black bg-opacity-65 z-10"></div> */}
+    <div className="w-full h-heroHeight relative flex bg-black">
       <video
         ref={videoRef}
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
@@ -57,7 +56,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-80"></div>
       <div className="w-full h-full absolute top-0 left-0 z-20 flex justify-center items-center">
-        <div className="h-1/2 w-2/3 flex flex-col justify-between items-start">
+        <div className="h-2/5 w-2/3 flex flex-col justify-between items-start">
           {/* BUTTON START */}
           <div>
             <Button type="secondary">LOREM IPSUM</Button>

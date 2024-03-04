@@ -6,7 +6,7 @@ import { Button } from '../Button'
 
 export const NavBar = () => {
   return (
-    <div className="w-full h-24 flex justify-center items-center bg-lightGray">
+    <div className="w-full h-navbarHeight flex justify-center items-center bg-lightGray">
       <div className="w-2/3 flex justify-between items-center">
         <div className="flex gap-x-3">
           <Button type="primary" isActive={true}>
